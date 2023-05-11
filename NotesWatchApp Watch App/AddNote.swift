@@ -12,6 +12,8 @@ struct AddNote: View {
     @State private var text = ""
     @State private var notes = [Note]()
     
+    @Environment(\.dismiss) var presentation
+    
     var body: some View {
         VStack{
             TextField("New Note", text: $text)
@@ -25,6 +27,7 @@ struct AddNote: View {
                 notes.append(note)
                 Tools.shared.save(array: notes)
                 text = ""
+                presentation()
             }.background(.indigo)
                 .cornerRadius(24)
         }.onAppear {

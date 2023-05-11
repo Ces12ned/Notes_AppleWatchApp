@@ -20,6 +20,7 @@ struct ContentView: View {
                     .cornerRadius(20)
             }
             .padding()
+            .navigationTitle("Notes")
         }
     }
 }

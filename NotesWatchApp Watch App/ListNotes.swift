@@ -30,6 +30,7 @@ struct ListNotes: View {
         withAnimation{
             notes.remove(atOffsets: offsets)
         }
+        Tools.shared.save(array: notes)
     }
     
 }
