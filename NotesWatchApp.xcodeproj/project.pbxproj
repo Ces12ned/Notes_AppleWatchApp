@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A1C4EEA2A0CAC6500D7A9D2 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1C4EE92A0CAC6500D7A9D2 /* Note.swift */; };
+		0A1C4EEC2A0CAD8000D7A9D2 /* AddNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1C4EEB2A0CAD8000D7A9D2 /* AddNote.swift */; };
 		0AE6FB952A0CA6D70082AF4E /* NotesWatchApp Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0AE6FB942A0CA6D70082AF4E /* NotesWatchApp Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0AE6FB9A2A0CA6D70082AF4E /* NotesWatchAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE6FB992A0CA6D70082AF4E /* NotesWatchAppApp.swift */; };
 		0AE6FB9C2A0CA6D70082AF4E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE6FB9B2A0CA6D70082AF4E /* ContentView.swift */; };
@@ -39,6 +41,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0A1C4EE92A0CAC6500D7A9D2 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		0A1C4EEB2A0CAD8000D7A9D2 /* AddNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNote.swift; sourceTree = "<group>"; };
 		0AE6FB8E2A0CA6D70082AF4E /* NotesWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotesWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AE6FB942A0CA6D70082AF4E /* NotesWatchApp Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NotesWatchApp Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AE6FB992A0CA6D70082AF4E /* NotesWatchAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesWatchAppApp.swift; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 			children = (
 				0AE6FB992A0CA6D70082AF4E /* NotesWatchAppApp.swift */,
 				0AE6FB9B2A0CA6D70082AF4E /* ContentView.swift */,
+				0A1C4EEB2A0CAD8000D7A9D2 /* AddNote.swift */,
+				0A1C4EE92A0CAC6500D7A9D2 /* Note.swift */,
 				0AE6FB9D2A0CA6D80082AF4E /* Assets.xcassets */,
 				0AE6FB9F2A0CA6D80082AF4E /* Preview Content */,
 			);
@@ -194,6 +200,8 @@
 			files = (
 				0AE6FB9C2A0CA6D70082AF4E /* ContentView.swift in Sources */,
 				0AE6FB9A2A0CA6D70082AF4E /* NotesWatchAppApp.swift in Sources */,
+				0A1C4EEA2A0CAC6500D7A9D2 /* Note.swift in Sources */,
+				0A1C4EEC2A0CAD8000D7A9D2 /* AddNote.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
