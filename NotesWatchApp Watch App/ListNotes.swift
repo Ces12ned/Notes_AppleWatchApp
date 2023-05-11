@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ListNotes: View {
     
-    var notes : [Note] = [Note(title: "Make the dishes."), Note(title: "Go to the dentist."), Note(title: "Make zoom call with sprint team.")]
+    @State var notes = [Note]()
     
     var body: some View {
         NavigationStack{
@@ -19,11 +19,19 @@ struct ListNotes: View {
                         Text(notes[i].title)
                             .lineLimit(1)
                     }
-                }
-                
+                }.onDelete(perform: delete)
             }
+        }.onAppear {
+            notes = Tools.shared.load()
         }
     }
+    
+    private func delete(offsets: IndexSet){
+        withAnimation{
+            notes.remove(atOffsets: offsets)
+        }
+    }
+    
 }
 
 struct ListNotes_Previews: PreviewProvider {

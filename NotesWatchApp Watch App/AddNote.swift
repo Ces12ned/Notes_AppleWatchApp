@@ -16,16 +16,19 @@ struct AddNote: View {
         VStack{
             TextField("New Note", text: $text)
                 .cornerRadius(20)
-            Button("Add new note") {
+            Button("Add") {
                 guard text.isEmpty == false else{
                     return
                 }
                 
                 let note = Note(title: text)
                 notes.append(note)
+                Tools.shared.save(array: notes)
                 text = ""
             }.background(.indigo)
                 .cornerRadius(24)
+        }.onAppear {
+            notes = Tools.shared.load()
         }
     }
 }

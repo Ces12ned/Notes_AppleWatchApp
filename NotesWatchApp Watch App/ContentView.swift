@@ -10,15 +10,17 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-        var note = Note(title: "First Note")
-        
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("\(note.title)")
+        NavigationStack{
+            VStack {
+                NavigationLink("Add new note", destination: AddNote())
+                    .background(.indigo)
+                    .cornerRadius(20)
+                NavigationLink("View notes", destination: ListNotes())
+                    .background(Color(UIColor(red: 255/255, green: 150/255 , blue: 0 , alpha: 0.8)))
+                    .cornerRadius(20)
+            }
+            .padding()
         }
-        .padding()
     }
 }
 
